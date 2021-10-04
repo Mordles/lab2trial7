@@ -13,4 +13,4 @@ gpio.add_event_detect(26, gpio.RISING, callback=on_pushdown, bouncetime=200)
 try:  
     while True : pass  
 except:
-    GPIO.cleanup()
+    gpio.cleanup()
