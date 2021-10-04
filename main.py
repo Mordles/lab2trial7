@@ -8,7 +8,7 @@ def on_pushdown(channel):
     print ("Button Pushed.")
 
 # only add the detection call once!
-gpio.add_event_detect(5, gpio.RISING, callback=on_pushdown, bouncetime=200)
+gpio.add_event_detect(26, gpio.RISING, callback=on_pushdown, bouncetime=200)
 
 while(True):
     try:
